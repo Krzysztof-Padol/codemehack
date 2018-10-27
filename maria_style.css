@@ -1,0 +1,5 @@
+header ,#film, #actor, #nav {
+    display: block;
+    float: left;
+    list-style-type: none;
+}
