@@ -2,14 +2,16 @@
     margin:0px;
     padding:0px;
     box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 body {
     background-color: #fff;
+    color:white;
 }
 header {
+    margin-top:20px;
     width: 100%;
-    height:500px;
     .top{
         height:50px;
     }
@@ -41,38 +43,95 @@ header {
         }
 
     }
-    .image{
-        background-image: url(img/hero_bg.jpg);
-        height:300px;
-        width: 100%;
+    
+}
+
+section.image{
+    background:linear-gradient(to bottom, rgba(30, 87, 153, 0) 0%, rgba(29, 83, 146, 0) 4%, black 86%), url("../img/hero_bg.jpg");
+    background-size: cover;
+    background-position: 50% 50%;
+    height:450px;
+    width: 100%;
+    display:flex;
+    flex-direction: column;
+    justify-content:flex-end;
+    padding-left:100px;
+    padding-bottom:100px;
+    h1,h2 {
+        font-size: 47px;
+        color:white;
     }
 }
 
 main{
     width:1200px;
     margin:auto;
-    background-color: gray;
+    // background-color: gray;
     height:500px;
     .wrapper{
         padding:50px;
+        height: 1000px;
+        background-color: #272323;
     }
     .najfilmy{
         height:200px;
         }
-    .najfilmy div{
+    .najfilmy article{
         float:left;
-        width:33%;
-        height:200px;
-        background-color: blue;
+        width:23%;
+        // height:400px;
         position: relative;
-        padding:50px;
+        margin:50px;
         img {
             width:100%;
             height:auto;
         }
-        span{
+        footer {
             position: absolute;
-            bottom:20px;
+            bottom: 20px;
+            width: 100%;
+            background-color:rgba($color: #000000, $alpha: 0.5);
+            bottom: 35px;
+            left: 0px;
+            height: 80px;
+            font-size: 20px;
+            color:white;
+            padding:20px;
+        }
+        // span {
+        //     position: absolute;
+        //     bottom: 20px;
+        //     width: 100%;
+        //     background-color:rgba($color: #000000, $alpha: 0.5);
+        //     bottom: 35px;
+        //     left: 0px;
+        //     height: 80px;
+        //     font-size: 20px;
+        //     color:white;
+        //     padding:20px;
+        // }
+    }
+    .aktmies article{
+        float:left;
+        width:23%;
+        // height:400px;
+        position: relative;
+        margin:50px;
+        img {
+            width:100%;
+            height:auto;
+        }
+        span {
+            position: absolute;
+            bottom: 20px;
+            width: 100%;
+            background-color:rgba($color: #000000, $alpha: 0.5);
+            bottom: 35px;
+            left: 0px;
+            height: 80px;
+            font-size: 20px;
+            color:white;
+            padding:20px;
         }
     }
 }
