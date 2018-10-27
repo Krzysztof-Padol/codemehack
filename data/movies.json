@@ -36,23 +36,6 @@
             "actorsIds": [2,3]
         },
         {
-            "id": 2,
-            "title": "First man",
-            "director": "Damien Chazelle",
-            "scenario": [
-                "Josh Singer"
-            ],
-            "production": "USA",
-            "release_date": "29.08.2018",
-            "release_year": "2018",
-            "rate": 7.7,
-            "img": "img/movies/2.jpg",
-            "short_description": "Fragment życia astronauty Neila Armstronga i jego legendarnej misji kosmicznej, dzięki której jako pierwszy człowiek stanął na Księżycu.",
-            "long_description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam odit debitis ad cumque impedit sequi similique fuga temporibus, laborum consequatur dolorem ab vel omnis quas cupiditate. Mollitia, corporis officia? Magni?",
-            "review": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam odit debitis ad cumque impedit sequi similique fuga temporibus, laborum consequatur dolorem ab vel omnis quas cupiditate. Mollitia, corporis officia? Magni?",
-            "actorsIds": [2,3]
-        },
-        {
             "id": 3,
             "title": "7 uczuć",
             "director": "Marek Koterski",
