@@ -1,0 +1,12 @@
+.baner{
+    height:300px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 100px 0;
+    background-image: url(img/movies/2.jpg);
+  }
+
+  h1 {
+      color:white;
+  }
