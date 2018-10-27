@@ -108,22 +108,26 @@ var filmy = {
     "totalElements": 6
 };
 
-function addingfilms(source) {
+function addingfilms(source,tekst,rok) {
     var rowfilms = document.querySelector("div.row.rowfilms");
     var imgdiv = document.createElement("div");
-    imgdiv.classList.add("col-lg-2", "md-5", "sm-5", "xs-10", "text-justify", "mx-5");
+    imgdiv.classList.add("card-item", "col-lg-3", "md-5", "sm-5", "xs-10", "text-justify", "m-5");
 
     var img = document.createElement("img");
-    img.classList.add("img-fluid", "d-block", "mx-auto", "img-thumbnail");
+    img.classList.add("img-fluid", "d-block", "mx-auto");
     img.src = source;
 
-    imgdiv.appendChild(img);
+    var footer = document.createElement("footer");
+    footer.classList.add("footer-img");
+    footer.innerHTML = `${tekst} ${rok}`;
 
+    imgdiv.appendChild(img);
+    imgdiv.appendChild(footer);
     rowfilms.appendChild(imgdiv);
 
 
 }
 
 for (i = 0; i < 7; i++) {
-    addingfilms(filmy.data[i].img);
+    addingfilms(filmy.data[i].img,filmy.data[i].title,filmy.data[i].release_year);
 }
