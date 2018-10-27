@@ -22,6 +22,7 @@ nav.navbar {
 .card-item {
     position: relative;
     padding: 0;
+    margin: 0;
 }
 
 .footer-img {
@@ -33,4 +34,21 @@ nav.navbar {
     left: 0;
     right: 0;
     
+}
+
+.aktorzy-img {
+    position: relative;
+    height: 300px;
+    width: 220px;
+    margin: 20px;
+}
+
+.aktorzy-footer {
+    background-color: rgba(0, 0, 0, 0.452);
+    height: 40px;
+    color: white;
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    right: 0
 }
