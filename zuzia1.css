@@ -1,0 +1,104 @@
+ 
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #EEECEC;
+	font-family: 'Lato', sans-serif;
+}
+
+section {
+	background-color: white;
+	margin: 10px;
+	padding: 20px;
+}
+
+main {
+	width: 100%;
+	max-width: 1150px;
+	margin: 0 auto;
+}
+
+.section-title {
+	font-size: 36px;
+}
+
+.actors__text-box {
+	overflow: hidden;
+	margin-top: 10px;
+}
+
+.actors__paragraph {
+	margin-top: 20px;
+}
+
+.actors__paragraph:first-of-type {
+	margin-top: 0;
+}
+
+.actors__image {
+	float: left;
+	margin: 0 20px 0 0;
+}
+
+.film-list__item-image {
+	width: 100%;
+}
+
+.film-list__hld {
+	padding-left: 20px;
+	margin-top: 20px;
+}
+
+.actors-list__hld {
+	/*max-width: 900px;*/
+	margin: 20px auto 0 auto;
+	padding: 0 20px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.actors-list__title-link {
+	color: green;
+	font-size: 14px;
+}
+
+.film-list__item-box, .actors-list__item-box {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	padding: 20px 10px;
+	color: white;
+	background-color: rgba(0,0,0,0.6);
+}
+ .film-list__item, .actors-list__item {
+ 	position: relative;
+ 	width: 30%;
+ 	margin-right: 5%;
+ }
+
+ .film-list__item:nth-child(3n), .actors-list__item:nth-child(3n) {
+	margin-right: 0;
+ }
+
+
+ .film-list__item-title, .actors-list__item-title {
+ 	font-size: 22px;
+ 	font-weight: bold;
+ }
+
+.actors-list__item-image {
+	width: 100%;
+}
+
+
+
+
+
+
+
+
