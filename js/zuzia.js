@@ -122,7 +122,7 @@ var movie = [
         }
     ];
 
-
+// funckja tworzy sekcje informacja zawierającą zdjęciem i opisem filmu
 function createInfoMovie(imgSrc,description){
     let image = document.createElement('img');
     let text = document.createElement('p');
@@ -141,7 +141,7 @@ function createInfoMovie(imgSrc,description){
 
     return container
 };
-
+//funckcja tworzy sekcje recenzja z opisem filmu
 function createRecMovie(description){
     let naglowek = document.createElement('h2');
     let container = document.createElement('div');
@@ -160,8 +160,23 @@ function createRecMovie(description){
 
     return container
 };
+// dodałam  sekcje zwiastun MAGDA. Sekcja zwiastun z linkiem do video
+function createTrailerMovie(LinkDoFilmu){
+    let naglowek = document.createElement('h2');
+    let video = document.createElement('iframe');
+    let container = document.createElement('div');
+    
+    container.classList.add('trailer');
+    iframe.src = LinkDoFilmu;
+    naglowek.innerHTML = 'Zwiastun';
 
+    container.appendChild(naglowek);
+    container.appendChild(video);
 
+    return container
+}
+
+//funkcja dodaje sekcje z listą filmów
 function createFilmList(imgSrc){
     let naglowek = document.createElement('h2');
     let container = document.createElement('div');
@@ -176,22 +191,42 @@ function createFilmList(imgSrc){
 
     return container
 };
+// dodałam  sekcje aktors list MAGDA, sekcja z aktorami
+function createActorsList(imgSrc){
 
+    let container = document.createElement('div');
+    let naglowek = document.createElement('h2');
+    let image = document.createElement('img');
 
-function openMovieSite(img,recenzja,opis ){
+    container.classList.add('actors_list');
+    image.src = imgSrc;
+    naglowek.innerHTML = 'Aktorzy';
+
+    container.appendChild(naglowek);
+    container.appendChild(image);
+
+return container
+
+}
+//funkcja tworzy podstrone filmu
+function openMovieSite(imgInfo,recenzja,opis,link,imgAct){
     let section = document.createElement('section');
     let main = document.createElement('main');
 
 
-    let info = createInfoMovie(img,opis);
+    let info = createInfoMovie(imgInfo,opis);
     let rec = createRecMovie(recenzja);
-    let filmList = createFilmList(img);
+    let trailer = createTrailerMovie(link);
+    let filmList = createFilmList(imgInfo);
+    let actors_list = createActorsList(imgAct)
 
     section.classList.add('first_man');
 
     section.appendChild(info);
     section.appendChild(rec);
+    section.appendChild(trailer);
     section.appendChild(filmList);
+    section.appendChild(actors_list);
 
     main.appendChild(section);
 
@@ -200,6 +235,6 @@ function openMovieSite(img,recenzja,opis ){
 };
 
 
-var main = openMovieSite(movie[0].img, movie[0].review, movie[0].long_description);
+var main = openMovieSite(movie[0].img, movie[0].review, movie[0].long_description, movie[0].videolink, movie[0].imgAct);
 
 document.body.appendChild(main);
